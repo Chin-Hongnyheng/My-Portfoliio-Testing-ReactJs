@@ -2,29 +2,28 @@
 .app-container {
   position: relative;
   width: 100%;
-  max-width: 580px;
+  max-width: 1080px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
 }
 
 .glow-aura {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 460px;
-  height: 380px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(139, 92, 246, 0.12) 40%, transparent 70%);
-  filter: blur(40px);
+  max-width: 850px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.16) 0%, rgba(139, 92, 246, 0.1) 40%, transparent 70%);
+  filter: blur(60px);
   z-index: 0;
   pointer-events: none;
 }
 
-/* Glassmorphism Profile Card */
-.profile-card {
+/* Glassmorphism Card System */
+.profile-card,
+.content-card {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -33,19 +32,28 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-subtle);
   border-radius: 24px;
-  padding: 36px 32px;
+  padding: 28px 24px;
   box-shadow: 
     0 20px 40px -15px rgba(0, 0, 0, 0.6),
     0 0 0 1px rgba(255, 255, 255, 0.05),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   text-align: left;
 }
 
-.profile-card:hover {
+@media (min-width: 768px) {
+  .profile-card,
+  .content-card {
+    padding: 32px 28px;
+    gap: 24px;
+  }
+}
+
+.profile-card:hover,
+.content-card:hover {
   border-color: var(--border-hover);
   box-shadow: 
     0 24px 48px -12px rgba(0, 0, 0, 0.7),
@@ -200,10 +208,6 @@
   font-weight: 800;
   letter-spacing: -0.8px;
   margin: 0;
-  color: #ffffff;
-  background: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .profile-role {

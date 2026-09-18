@@ -4,7 +4,7 @@ A sleek, modern personal developer portfolio showcasing full-stack web developme
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This portfolio serves as a personal showcase for **Chin Hongnyheng**, an aspiring full-stack developer dedicated to building web applications from scratch and leveraging modern AI agentic workflows.
 
@@ -16,7 +16,7 @@ This portfolio serves as a personal showcase for **Chin Hongnyheng**, an aspirin
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [React 19](https://react.dev/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
@@ -26,7 +26,7 @@ This portfolio serves as a personal showcase for **Chin Hongnyheng**, an aspirin
 
 ---
 
-## 💻 Getting Started
+## Getting Started
 
 Follow these steps to run the project locally on your machine.
 
@@ -55,7 +55,7 @@ Make sure you have [Node.js](https://nodejs.org/) (version 18+ recommended) inst
 
 ---
 
-## 📜 Available Scripts
+## Available Scripts
 
 - `npm run dev` — Starts the local Vite development server with Hot Module Replacement (HMR).
 - `npm run build` — Compiles and bundles the application for production in the `dist/` directory.
@@ -64,6 +64,6 @@ Make sure you have [Node.js](https://nodejs.org/) (version 18+ recommended) inst
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
